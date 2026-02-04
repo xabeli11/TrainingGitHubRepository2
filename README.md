@@ -42,3 +42,6 @@ Nota
 ----
 La información anterior es un resumen orientativo. Para detalles oficiales y condiciones, consulte siempre la página web del banco.
 
+Attachements.
+
+
