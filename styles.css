@@ -1,0 +1,55 @@
+/* Estilos para Banco Ejemplo */
+:root{
+  --primary:#0b63d6;
+  --muted:#6b7280;
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#0f1724;background:var(--bg);margin:0}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,var(--primary),#0666c7);color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.brand h1{margin:0;font-size:1.25rem}
+.brand .tag{margin:0;font-size:0.9rem;opacity:.9}
+.main-nav a{color:rgba(255,255,255,0.95);margin-left:1rem;text-decoration:none}
+
+.hero{padding:2rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:start}
+.hero-text h2{margin-top:0}
+.features{padding-left:1.15rem;color:var(--muted)}
+
+.login-card{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.08)}
+.login-card h3{margin-top:0}
+.login-form{display:flex;flex-direction:column}
+.login-form label{font-size:.9rem;margin-top:.5rem}
+.login-form input{padding:.6rem;border:1px solid #e6eef9;border-radius:6px;margin-top:.25rem}
+.checkbox{display:flex;align-items:center;margin-top:.5rem;font-size:.9rem}
+.btn-primary{margin-top:1rem;background:var(--primary);color:#fff;border:none;padding:.7rem;border-radius:6px;cursor:pointer}
+.btn-primary:hover{filter:brightness(.98)}
+.small{margin:0;margin-top:.5rem;font-size:.85rem}
+
+.info-section{padding:1.5rem 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+
+.contact-section{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;padding:1.5rem 0}
+
+.security-section{padding:1.5rem 0}
+
+.site-footer{background:#0b2238;color:#dbeafe;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:center}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .contact-section{grid-template-columns:1fr}
+  .main-nav{display:none}
+}
+
+@media (prefers-color-scheme:dark){
+  body{background:#071022;color:#dbeafe}
+  .site-header{background:#05203d}
+  .login-card,.card{background:#0b1220}
+}
